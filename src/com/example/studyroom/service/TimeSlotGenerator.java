@@ -1,4 +1,4 @@
-package com.example.studyroom;
+package com.example.studyroom.service;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -74,9 +74,9 @@ public class TimeSlotGenerator {
         }
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         TimeSlotGenerator generator = new TimeSlotGenerator();
         List<String> slots = generator.generateSlots(9, 18, 30);
         System.out.println(slots);
-    }
+    }*/
 }

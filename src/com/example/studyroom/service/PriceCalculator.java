@@ -1,6 +1,9 @@
-package com.example.studyroom;
+package com.example.studyroom.service;
 
-public class ReservationPriceCalculator {
+import com.example.studyroom.domain.MembershipGrade;
+import com.example.studyroom.domain.RoomType;
+
+public class PriceCalculator {
     /*
      * 리팩터링 전 상태
      * - RoomType, Grade enum 이 클래스 내부에 있었음
@@ -74,12 +77,12 @@ public class ReservationPriceCalculator {
         return (int) (price * 0.95);
     }
 
-    public static void main(String[] args) {
-        ReservationPriceCalculator calculator = new ReservationPriceCalculator();
+    /*public static void main(String[] args) {
+        PriceCalculator calculator = new PriceCalculator();
         int weekdayPrice = calculator.calculatePrice(RoomType.SMALL, MembershipGrade.NORMAL, 2, false);
         int weekendVipPrice = calculator.calculatePrice(RoomType.LARGE, MembershipGrade.VIP, 6, true);
 
         System.out.println(weekdayPrice);
         System.out.println(weekendVipPrice);
-    }
+    }*/
 }

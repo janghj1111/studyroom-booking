@@ -1,4 +1,4 @@
-package com.example.studyroom;
+package com.example.studyroom.domain;
 
 public enum RoomType {
     SMALL(10_000),
